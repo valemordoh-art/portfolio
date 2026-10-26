@@ -11,9 +11,9 @@
 
   :root{
     --c-bg:#FCF2E4; --c-surface:#FAE3CB; --c-ink:#1F1815;
-    --c-accent:#FB5424; --c-pink:#FD8297; --c-muted:#8A776A;
+    --c-accent:#FB5424; --c-lilac:#B8A5E3; --c-yellow:#D6E84B; --c-muted:#8A776A;
     --c-cool:#4A86E8;
-    --c-on-accent:#FCF2E4; --c-on-pink:#1F1815;
+    --c-on-accent:#FCF2E4; --c-on-lilac:#1F1815;
     --s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;--s-6:32px;
     --s-7:48px;--s-8:64px;--s-9:96px;--s-10:128px;
     --r-sm:10px; --r-md:20px; --r-lg:32px; --r-pill:999px;
@@ -34,7 +34,7 @@
   .wrap{ max-width:var(--container); margin:0 auto; padding:0 var(--gutter); }
   .panel{ padding:var(--s-9) 0; }
   .panel--accent{ background:var(--c-accent); color:var(--c-on-accent); }
-  .panel--pink{ background:var(--c-pink); color:var(--c-on-pink); }
+  .panel--lilac{ background:var(--c-lilac); color:var(--c-on-lilac); }
   .panel--surface{ background:var(--c-surface); }
   .panel--cream{ background:var(--c-bg); }
 
@@ -51,7 +51,7 @@
   p{ margin:0 0 var(--s-4); }
   strong{ font-weight:700; }
   .hl{ color:var(--c-accent); }
-  .panel--accent .hl, .panel--pink .hl{ color:var(--c-ink); }
+  .panel--accent .hl, .panel--lilac .hl{ color:var(--c-ink); }
 
   .sec-head{ display:flex; align-items:baseline; gap:var(--s-4); margin-bottom:var(--s-6); }
   .sec-head .rule{ flex:1; height:2px; background:currentColor; opacity:.18; }
@@ -92,14 +92,14 @@
   .btn:hover{ transform:translateY(-2px); }
   .btn--accent{ background:var(--c-accent); color:var(--c-on-accent); }
   .btn--cream{ background:var(--c-bg); color:var(--c-ink); }
-  .btn--pink{ background:var(--c-pink); color:var(--c-on-pink); }
+  .btn--lilac{ background:var(--c-lilac); color:var(--c-on-lilac); }
   .btn--ink{ background:var(--c-ink); color:var(--c-bg); }
 
   /* ---------- Tags / chips ---------- */
   .tags{ display:flex; flex-wrap:wrap; gap:var(--s-2); margin:var(--s-5) 0 0; }
   .tag{ background:var(--c-surface); color:var(--c-ink); border-radius:var(--r-sm); padding:6px var(--s-3);
         font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
-  .panel--accent .tag, .panel--pink .tag{ background:rgba(255,255,255,0.55); }
+  .panel--accent .tag, .panel--lilac .tag{ background:rgba(255,255,255,0.55); }
 
   /* ---------- Collapsible / teaser ---------- */
   .collapse-body{ overflow:hidden; transition:max-height .35s ease, opacity .25s ease; opacity:1; }
@@ -133,7 +133,7 @@
   .quote{ font-family:var(--f-display); text-transform:uppercase; font-size:clamp(24px,3.4vw,36px); line-height:1.05; margin:0 0 var(--s-5); text-wrap:balance; }
   .meta{ display:flex; flex-wrap:wrap; gap:var(--s-2); margin-bottom:var(--s-6); }
   .meta span{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; background:var(--c-surface); padding:6px var(--s-3); border-radius:var(--r-sm); }
-  .panel--pink .meta span{ background:rgba(255,255,255,0.55); }
+  .panel--lilac .meta span{ background:rgba(255,255,255,0.55); }
 
   /* ---------- Disclosure / KPI / charts ---------- */
   .disclosure{ background:var(--c-bg); border-radius:var(--r-md); padding:var(--s-5) var(--s-6); margin-bottom:var(--s-6); font-size:15px; }
@@ -193,8 +193,8 @@
     <nav class="topnav-links" id="topnavLinks">
       <a href="#why" data-target="why">Why</a>
       <a href="#ch1" data-target="ch1" style="--dot-color:var(--c-accent)">CS</a>
-      <a href="#ch2" data-target="ch2" style="--dot-color:var(--c-pink)">Product</a>
-      <a href="#ch3" data-target="ch3" style="--dot-color:var(--c-accent)">Ops</a>
+      <a href="#ch2" data-target="ch2" style="--dot-color:var(--c-lilac)">Product</a>
+      <a href="#ch3" data-target="ch3" style="--dot-color:var(--c-yellow)">Ops</a>
       <a href="#sample" data-target="sample" style="--dot-color:var(--c-muted)">Sample</a>
       <a href="#contact" data-target="contact">Contact</a>
     </nav>
@@ -298,8 +298,8 @@
   <div class="wrap">
     <nav class="jump-nav reveal" aria-label="Jump to a section">
       <a href="#ch1" data-target="ch1" style="--jump-color:var(--c-accent)">Customer Success</a>
-      <a href="#ch2" data-target="ch2" style="--jump-color:var(--c-pink)">Product Enablement</a>
-      <a href="#ch3" data-target="ch3" style="--jump-color:var(--c-accent)">Ops &amp; Enablement</a>
+      <a href="#ch2" data-target="ch2" style="--jump-color:var(--c-lilac)">Product Enablement</a>
+      <a href="#ch3" data-target="ch3" style="--jump-color:var(--c-yellow)">Ops &amp; Enablement</a>
       <a href="#sample" data-target="sample" style="--jump-color:var(--c-muted)">Sample Report</a>
       <a href="#contact" data-target="contact">Get in Touch</a>
     </nav>
@@ -364,7 +364,7 @@
     </div>
   </section>
 
-  <section class="panel panel--pink" id="ch2">
+  <section class="panel panel--lilac" id="ch2">
     <div class="wrap" style="max-width:760px;">
       <div class="chapter-label reveal" style="--chapter-color:var(--c-ink)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"/></svg>
@@ -515,14 +515,14 @@
         <div class="chart-block reveal">
           <div class="chart-head"><h4>Earning rule performance</h4><span class="note">redemption lift attributed, sample qtr</span></div>
           <div class="bar-row"><div class="name">Referral bonus</div><div class="bar-track"><div class="bar-fill" style="width:85%; background:var(--c-accent)"></div></div><div class="val">+34%</div></div>
-          <div class="bar-row"><div class="name">Birthday bonus</div><div class="bar-track"><div class="bar-fill" style="width:48%; background:var(--c-pink)"></div></div><div class="val">+19%</div></div>
+          <div class="bar-row"><div class="name">Birthday bonus</div><div class="bar-track"><div class="bar-fill" style="width:48%; background:var(--c-yellow)"></div></div><div class="val">+19%</div></div>
           <div class="bar-row"><div class="name">Purchase points</div><div class="bar-track"><div class="bar-fill" style="width:20%; background:var(--c-cool)"></div></div><div class="val">+8%</div></div>
           <div class="bar-row"><div class="name">Social follow</div><div class="bar-track"><div class="bar-fill" style="width:8%; background:var(--c-muted)"></div></div><div class="val">+3%</div></div>
         </div>
         <div class="chart-block reveal">
           <div class="chart-head"><h4>Isolating what actually drove a spike</h4><span class="note">two separate periods, sample account</span></div>
           <div class="bar-row"><div class="name">Sale, no new campaign</div><div class="bar-track"><div class="bar-fill" style="width:55%; background:var(--c-accent)"></div></div><div class="val">+12%</div></div>
-          <div class="bar-row"><div class="name">New rule, no sale</div><div class="bar-track"><div class="bar-fill" style="width:42%; background:var(--c-pink)"></div></div><div class="val">+9%</div></div>
+          <div class="bar-row"><div class="name">New rule, no sale</div><div class="bar-track"><div class="bar-fill" style="width:42%; background:var(--c-yellow)"></div></div><div class="val">+9%</div></div>
           <p class="small muted reveal" style="margin-top:var(--s-4);">
             Neither number means much on its own. Comparing them, each isolated from the other
             factor, is how you tell a sale's lift from a campaign's lift instead of crediting one
